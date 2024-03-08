@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="px-[27px] container mx-auto flex md:justify-evenly justify-between items-center mt-[44px] mb-[105px]">
+      <header className="px-5 container mx-auto flex md:justify-evenly justify-between items-center mt-[44px] mb-[105px]">
         {/* <!-- Logo --> */}
         <Link href="/">
           <LogoIcon />
@@ -52,7 +52,7 @@ const Header = () => {
 
       {/* <!-- Mobile Menu --> */}
       <div
-        className={`md:hidden fixed top-0 left-0 w-full h-full bg-[#0A142F] pt-[44px] px-[36px] ${
+        className={`md:hidden fixed top-0 left-0 w-full h-full bg-[#0A142F] pt-[44px] px-5 z-50 ${
           isMobileMenuOpen ? "" : "hidden"
         }`}
       >
