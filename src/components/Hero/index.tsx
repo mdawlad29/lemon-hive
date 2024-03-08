@@ -113,7 +113,7 @@ const HeroSection = () => {
           />
 
           <Image
-            className="absolute lg:-bottom-[6.7rem] lg:-left-6 -bottom-[25rem] -right-[1.25rem] md:w-[60px] md:h-[60px] w-[94px] h-[94px] lg:block md:hidden block"
+            className="absolute lg:-bottom-[8.7rem] lg:-left-6 -bottom-[25rem] -right-[1.25rem] md:w-[60px] md:h-[60px] w-[94px] h-[94px] lg:block md:hidden block"
             src={"/assets/hero-section/star.png"}
             alt="Hero Image"
             width={60}

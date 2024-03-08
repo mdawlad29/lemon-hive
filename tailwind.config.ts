@@ -21,7 +21,7 @@ const config: Config = {
         secondary: "#FFC93E",
         "secondary-50": "#617187",
         accent: "#2563EB",
-        "accent-50": "#CDCDCD",
+        "accent-50": "#667085",
         neutral: "#F9FAFB",
       },
       borderColor: {
