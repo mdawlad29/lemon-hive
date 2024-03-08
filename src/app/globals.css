@@ -6,3 +6,14 @@ body {
   color: #000;
   background: #fff;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffc93e;
+  border-radius: 10px;
+}

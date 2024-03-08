@@ -9,7 +9,7 @@ const Heading = ({
     <h1
       className={`${
         className ? className : ""
-      } text-primary md:text-5xl font-bold text-center capitalize`}
+      } text-primary md:text-5xl text-2xl font-bold text-center capitalize`}
     >
       {title}
     </h1>
