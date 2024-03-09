@@ -1,11 +1,8 @@
 import Footer from "@/components/partials/Footer";
 import Header from "@/components/partials/Header";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import PageRender from "./pageRender";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Lemon Hive Task",
@@ -19,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Header />
         <PageRender>{children}</PageRender>
         <Footer />

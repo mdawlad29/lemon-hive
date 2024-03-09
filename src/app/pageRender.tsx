@@ -15,7 +15,7 @@ const PageRender = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="min-h-screen">
       {isLoading ? (
-        <div className="flex justify-center items-center h-[80vh]">
+        <div className="flex justify-center items-center h-screen">
           <PageLoaderIcon />
         </div>
       ) : (
