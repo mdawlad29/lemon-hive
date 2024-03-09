@@ -36,7 +36,7 @@ const Header = () => {
           <nav key={menu?.label} className="hidden md:flex space-x-[57px]">
             <Link
               href={`${menu?.link}`}
-              className="text-[#0A142F] text-[18px] font-medium"
+              className="text-[#0A142F] text-[18px] font-medium hover:text-secondary duration-200 ease-in-out"
             >
               {menu?.label}
             </Link>
