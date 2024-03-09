@@ -19,11 +19,21 @@ const Conference = () => {
     <div className="lg:mt-[18rem] mb-[100px] flex flex-col justify-evenly items-center">
       <Heading title="conference" className="mb-10" />
 
+      {/*<----- Desktop View ------>*/}
       <div className="lg:block hidden space-y-[56px]">
         {[...Array(5)]?.map((_, index: number) => (
           <div key={index}>
             {index === 0 || index === 2 || index === 4 ? (
-              <Link href={""} className="flex justify-center">
+              <Link
+                href={`/conference/${
+                  index === 0
+                    ? "freezing-fdge-2023"
+                    : index === 2
+                    ? "web-components-write-once-&-run"
+                    : "the-weird-things-about-react"
+                }`}
+                className="flex justify-center"
+              >
                 <div ref={ref} className="relative">
                   <motion.div
                     style={{ scaleY: scrollYProgress }}
@@ -56,12 +66,21 @@ const Conference = () => {
                 />
               </Link>
             ) : index === 1 || index === 3 ? (
-              <Link href={""} className="flex justify-center">
+              <Link
+                href={`/conference/${
+                  index === 1
+                    ? "Design-systems-for-beginners"
+                    : "accessibility-testing-for-developers"
+                }`}
+                className="flex justify-center"
+                id="conference"
+              >
                 <div ref={ref} className="relative">
                   <motion.div
                     style={{ scaleY: scrollYProgress }}
                     className="absolute left-[37rem] top-11 w-[1.5px] h-full bg-secondary origin-top"
                   />
+
                   <TimeCard
                     className="absolute -right-[2rem]"
                     descType="text-right"
@@ -70,7 +89,7 @@ const Conference = () => {
                 </div>
                 <CircleIcon
                   reference={ref}
-                  className="absolute left-[41.5rem]"
+                  className="absolute lg:left-[41.5rem] xl:left-[44rem] xxl:left-[45rem]"
                 />
 
                 <ConferenceCard
@@ -88,6 +107,7 @@ const Conference = () => {
         ))}
       </div>
 
+      {/*<----- Mobile View ------>*/}
       <div className="lg:hidden block w-full">
         <ResponsiveCard />
       </div>

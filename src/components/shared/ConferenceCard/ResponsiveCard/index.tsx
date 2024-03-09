@@ -24,36 +24,47 @@ const ResponsiveCard = () => {
           className="absolute left-[2.3rem] top-1 w-[1.5px] h-full bg-secondary origin-top"
         />
 
-        <div className="space-y-[40px]">
-          {[...Array(5)]?.map((_, index: number) => (
-            <Link href={""} key={index}>
-              <Details
-                title={
-                  index === 0
-                    ? "Freezing Edge 2023"
-                    : index === 1
-                    ? "Design systems for beginners"
-                    : index === 2
-                    ? "Web Components - Write once & run"
-                    : index === 3
-                    ? "Accessibility testing for developers"
-                    : "The weird things about React"
-                }
-                desc={
-                  index === 0
-                    ? "The edge isn't bleeding, it's freezing!"
-                    : index === 1
-                    ? "Design systems for beginners"
-                    : index === 2
-                    ? "The edge isn't bleeding, it's freezing!"
-                    : index === 3
-                    ? "Accessibility testing for developers"
-                    : "Conditional rendering issues in JSX, forwardRef"
-                }
-              />
-            </Link>
-          ))}
-        </div>
+        {[...Array(5)]?.map((_, index: number) => (
+          <Link
+            href={`/conference/${
+              index === 0
+                ? "freezing-fdge-2023"
+                : index === 1
+                ? "Design-systems-for-beginners"
+                : index === 2
+                ? "web-components-write-once-&-run"
+                : index === 3
+                ? "accessibility-testing-for-developers"
+                : "the-weird-things-about-react"
+            }`}
+            key={index}
+          >
+            <Details
+              title={
+                index === 0
+                  ? "Freezing Edge 2023"
+                  : index === 1
+                  ? "Design systems for beginners"
+                  : index === 2
+                  ? "Web Components - Write once & run"
+                  : index === 3
+                  ? "Accessibility testing for developers"
+                  : "The weird things about React"
+              }
+              desc={
+                index === 0
+                  ? "The edge isn't bleeding, it's freezing!"
+                  : index === 1
+                  ? "Design systems for beginners"
+                  : index === 2
+                  ? "The edge isn't bleeding, it's freezing!"
+                  : index === 3
+                  ? "Accessibility testing for developers"
+                  : "Conditional rendering issues in JSX, forwardRef"
+              }
+            />
+          </Link>
+        ))}
       </div>
     </div>
   );
@@ -72,7 +83,7 @@ const Details: FC<ICardProps> = ({ title, desc }) => {
 
       <p className={`text-sm text-secondary-50 mb-2`}>02 September, 2023</p>
 
-      <div className="space-y-2 px-[6px] py-[18px] relative bg-neutral rounded-lg border-t-4 border-accent-50 hover:border-secondary duration-300 ease-in-out shadow hover:shadow-md">
+      <div className="space-y-2 px-[6px] py-[18px] relative bg-neutral rounded-lg border-t-4 border-accent-50 hover:border-secondary duration-300 ease-in-out shadow hover:shadow-md mb-[40px]">
         <div className="flex gap-4">
           <div className="w-[16px] h-[16px] bg-secondary rounded-full p-1">
             <div className="w-[7px] h-[7px] bg-neutral rounded-full" />

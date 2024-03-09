@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="px-5 container mx-auto flex md:justify-evenly justify-between items-center mt-[44px] mb-[105px]">
+      <header className="flex justify-between items-center container mx-auto px-5 mt-[44px] md:mb-[105px] mb-12">
         {/* <!-- Logo --> */}
         <Link href="/">
           <LogoIcon />

@@ -3,6 +3,7 @@ import Header from "@/components/partials/Header";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import PageRender from "./pageRender";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main className="min-h-screen">{children}</main>
+        <PageRender>{children}</PageRender>
         <Footer />
       </body>
     </html>

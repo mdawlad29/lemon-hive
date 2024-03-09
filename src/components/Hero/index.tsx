@@ -13,9 +13,9 @@ const HeroSection = () => {
         alt="To-bg"
       />
 
-      <div className="grid lg:grid-cols-8 md:grid-cols-6 grid-cols-1 gap-11 lg:px-24 px-5">
+      <div className="grid lg:grid-cols-8 md:grid-cols-6 grid-cols-1 gap-11 lg:px-24 px-5 pt-14">
         {/*<------ Left Info ------>*/}
-        <div className="relative lg:mt-36 lg:order-1 order-3 lg:col-span-2 md:col-span-3 col-span-1 md:mb-0 mb-[19rem]">
+        <div className="relative lg:mt-[11rem] lg:order-1 order-3 lg:col-span-2 md:col-span-3 col-span-1 md:mb-0 mb-[19rem]">
           <Image
             className="absolute left-0 top-0 z-20 lg:w-[329px] lg:h-[419px] md:h-[348px] md:w-full w-[157px] h-[200px] lg:object-contain"
             src={"/assets/hero-section/hero-left-img.png"}
@@ -45,7 +45,7 @@ const HeroSection = () => {
         <div className="relative order-1 lg:col-span-3 md:col-span-6 col-span-1">
           <div className="relative">
             <Image
-              className="absolute lg:left-[5px] lg:-top-[3.8rem] md:left-[26rem] md:-top-[3.8rem] right-[6.50rem] -top-[3.50rem]"
+              className="absolute lg:left-[38px] lg:-top-[3.8rem] md:left-[26rem] md:-top-[3.8rem] right-[6.50rem] -top-[3.50rem]"
               src={"/assets/hero-section/hero-top-icon.png"}
               alt="Hero Image"
               width={85}
@@ -57,7 +57,7 @@ const HeroSection = () => {
             </h1>
           </div>
 
-          <p className="text-lg text-[#000] text-justify lg:mt-52 md:mt-44 mt-36 mb-12">
+          <p className="text-lg text-[#000] text-justify lg:mt-[14rem] md:mt-44 mt-36 mb-12">
             Lorem uis diam turpis quam id fermentum.In quis diam turpis quam id
             fermentum..id fermentum.In quis diam turpis quam id fermentum.
           </p>
@@ -71,7 +71,7 @@ const HeroSection = () => {
             </Link>
           </div>
 
-          <div className="lg:block hidden">
+          <Link href={"#conference"} className="lg:block hidden">
             <div className="flex items-center gap-2 rotate-90 absolute right-0 -bottom-[6rem]">
               <p className="text-primary text-[14px] rotate-180">Scroll Down</p>
               <Image
@@ -83,7 +83,7 @@ const HeroSection = () => {
                 alt=""
               />
             </div>
-          </div>
+          </Link>
         </div>
 
         {/*<------ Right Info ------>*/}
